@@ -31,6 +31,25 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Interfaces\ISpeakerService.cs" />
+    <Compile Include="Interfaces\ISponsorService.cs" />
+    <Compile Include="Interfaces\ITrackServices.cs" />
+    <Compile Include="EventService.cs" />
+    <Compile Include="Interfaces\IEventService.cs" />
+    <Compile Include="Interfaces\ISessionService.cs" />
+    <Compile Include="SessionService.cs" />
+    <Compile Include="SpeaketService.cs" />
+    <Compile Include="SponsorService.cs" />
+    <Compile Include="TrackService.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TheEvnt.Models\TheEvnt.Models.csproj">
+      <Project>{52ED5B2A-0E6F-4E3A-B33F-172F39E80CB6}</Project>
+      <Name>TheEvnt.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>
