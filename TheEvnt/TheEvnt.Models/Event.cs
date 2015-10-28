@@ -17,6 +17,30 @@ namespace TheEvnt.Models
             set;
         }
 
+        public DateTime Day
+        {
+            get;
+            set;
+        }
+
+        public string City
+        {
+            get;
+            set;
+        }
+
+        public string State
+        {
+            get;
+            set;
+        }
+
+        public string FullAddress
+        {
+            get;
+            set;
+        }
+
         public string CoverImageUrl
         {
             get;

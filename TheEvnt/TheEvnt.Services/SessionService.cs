@@ -7,9 +7,16 @@ namespace TheEvnt.Services
 {
     public class SessionService : ISessionService
     {
+        //TODO: Turn to live services
+        private List<Session> _sessions;
+
         public SessionService()
         {
-            
+            _sessions = new List<Session>()
+            {
+                new Session() { Id = "1",  },
+
+            };
         }
 
         #region ISessionService implementation
