@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace TheEvnt.Services
 {
-    public interface ITrackServices
+    public interface ITrackService
     {
         Task<Track> GetTrackAsync(string trackId);
 

@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace TheEvnt.Services
 {
-    public class TrackService : ITrackServices
+    public class TrackService : ITrackService
     {
         public TrackService()
         {

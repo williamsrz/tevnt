@@ -14,8 +14,6 @@ namespace TheEvnt.Services
         {
             _sessions = new List<Session>()
             {
-                new Session() { Id = "1",  },
-
             };
         }
 

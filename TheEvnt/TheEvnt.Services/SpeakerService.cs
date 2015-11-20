@@ -1,16 +1,22 @@
 ﻿using System;
 using System.Threading.Tasks;
 using TheEvnt.Models;
+using System.Collections.Generic;
 
 namespace TheEvnt.Services
 {
-    public class SpeaketService : ISpeakerService
+    public class SpeakerService : ISpeakerService
     {
-        public SpeaketService()
+        public SpeakerService()
         {
         }
 
         #region ISpeakerService implementation
+
+        public Task<List<Speaker>> GetSpeakersAsync()
+        {
+            throw new NotImplementedException();
+        }
 
         public async Task<Speaker> GetSpeakerAsync(string speakerId)
         {
