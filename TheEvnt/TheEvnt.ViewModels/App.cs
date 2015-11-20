@@ -1,11 +1,9 @@
-﻿using System;
 using Cirrious.CrossCore.IoC;
-using Cirrious.CrossCore;
-using TheEvnt.Services;
+using Cirrious.MvvmCross.ViewModels;
 
 namespace TheEvnt.ViewModels
 {
-    public class App : Cirrious.MvvmCross.ViewModels.MvxApplication
+    public class App : MvxApplication
     {
         public override void Initialize()
         {
@@ -13,17 +11,8 @@ namespace TheEvnt.ViewModels
                 .EndingWith("Service")
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
-
-            // Registering as singleton so that the data isn't recreated each time.
-            Mvx.LazyConstructAndRegisterSingleton<IEventService, EventService>(); 
-            Mvx.LazyConstructAndRegisterSingleton<ISessionService, SessionService>(); 
-            Mvx.LazyConstructAndRegisterSingleton<ISpeakerService, SpeakerService>(); 
-            Mvx.LazyConstructAndRegisterSingleton<ISponsorService, SponsorService>(); 
-            Mvx.LazyConstructAndRegisterSingleton<ITrackService, TrackService>(); 
-
-
-            RegisterAppStart<MainViewModel>();
+				
+            RegisterAppStart<ViewModels.FirstViewModel>();
         }
     }
 }
-
